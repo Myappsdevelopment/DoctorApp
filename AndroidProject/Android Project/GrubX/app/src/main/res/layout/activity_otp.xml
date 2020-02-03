@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OTP">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/otp_img" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/left_cornor"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:gravity="center_horizontal"
+                android:text="Please enter the OTP sent to"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="1234567890"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text=".Change"
+                    android:textColor="@color/yellow"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lyt_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <EditText
+                    android:id="@+id/edt_otp1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.3"
+                    android:inputType="number"
+                    android:gravity="center_horizontal"
+                    android:nextFocusForward="@id/edt_otp2"
+                    android:backgroundTint="@android:color/white"
+                    android:maxLength="1"
+                    android:textColor="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/edt_otp2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:inputType="number"
+                    android:nextFocusForward="@id/edt_otp3"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.3"
+                    android:backgroundTint="@android:color/white"
+                    android:maxLength="1"
+                    android:textColor="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/edt_otp3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:nextFocusForward="@id/edt_otp4"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:inputType="number"
+                    android:layout_weight="0.3"
+                    android:backgroundTint="@android:color/white"
+                    android:maxLength="1"
+                    android:textColor="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/edt_otp4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:inputType="number"
+                    android:layout_weight="0.3"
+                    android:backgroundTint="@android:color/white"
+                    android:maxLength="1"
+                    android:textColor="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/edt_otp5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:inputType="number"
+                    android:layout_weight="0.3"
+                    android:backgroundTint="@android:color/white"
+                    android:maxLength="1"
+                    android:textColor="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/edt_otp6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:inputType="number"
+                    android:layout_weight="0.3"
+                    android:backgroundTint="@android:color/white"
+                    android:maxLength="1"
+                    android:textColor="@android:color/white" />
+
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:gravity="bottom"
+                android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="40dp"
+                android:id="@+id/btn_verify"
+                android:layout_centerHorizontal="true"
+                android:paddingRight="40dp"
+                android:layout_marginBottom="40dp"
+                android:layout_above="@+id/lyt_txt"
+                android:text="Verify"
+                android:textAllCaps="false" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lyt_txt"
+                android:layout_marginBottom="50dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Not received your code? "
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text=" Resend code"
+                    android:textColor="@color/yellow"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

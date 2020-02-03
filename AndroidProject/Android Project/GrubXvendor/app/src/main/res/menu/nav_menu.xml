@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/products"
+        android:title="Products" />
+
+    <item
+        android:id="@+id/add_products"
+        android:title="Add Products" />
+    <item
+        android:id="@+id/business"
+        android:title="Business" />
+    <item
+        android:id="@+id/add_business"
+        android:title="Add Business" />
+
+    <item
+        android:id="@+id/my_favourite"
+        android:title="My Favourite" />
+    <item
+        android:id="@+id/my_account"
+        android:title="My Account" />
+
+    <item
+        android:id="@+id/spcl_catalogue"
+        android:title="Special Catalogue" />
+
+    <item
+        android:id="@+id/place_order"
+        android:title="Place Order" />
+
+    <item
+        android:id="@+id/rate_us"
+        android:title="Rate Us" />
+
+    <item
+        android:id="@+id/about_us"
+        android:title="About Us" />
+
+
+    <item
+        android:id="@+id/sign_out"
+        android:title="Sign Out" />
+
+</menu>

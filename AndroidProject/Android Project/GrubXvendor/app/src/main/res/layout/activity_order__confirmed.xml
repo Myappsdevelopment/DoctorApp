@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Order_Confirmed">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/confirm_screen"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="ORDER CONFIRMED"
+        android:textAllCaps="true"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:text="Your order number is AZXCVFDG.Your \norder was placed sucsessfully and you \nwill soon receive your order confirmation \nvia email and mobile" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explore more Products"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:id="@+id/btn_moreproducts"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/white"
+        android:background="@color/sky_blue"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:id="@+id/view_orders"
+        android:textSize="14sp"
+        android:text="View Order history"/>
+
+</LinearLayout>

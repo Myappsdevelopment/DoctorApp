@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/categories"
+        android:title="Categories" />
+    <item
+        android:id="@+id/orders"
+        android:title="My Orders" />
+    <item
+        android:id="@+id/wish_list"
+        android:title="My Wish List" />
+
+    <item
+        android:id="@+id/add_business"
+        android:title="Add Business" />
+    <item
+        android:id="@+id/switch_business"
+        android:title="Switch Business" />
+
+    <item
+        android:id="@+id/reward"
+        android:title="Rewards" />
+
+    <item
+        android:id="@+id/about_us"
+        android:title="About Us" />
+
+    <item
+        android:id="@+id/invite"
+        android:title="Invite" />
+    <item
+        android:id="@+id/rate_us"
+        android:title="Rate Us" />
+
+    <item
+        android:id="@+id/sign_out"
+        android:title="Sign Out" />
+
+</menu>

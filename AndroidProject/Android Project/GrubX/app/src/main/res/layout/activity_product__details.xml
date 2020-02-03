@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Product_Details">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="fill_parent"
+                    android:layout_height="400dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/holo_red_dark"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="30dp"
+                    android:paddingBottom="5dp"
+                    android:text="20% off"
+                    android:textColor="@android:color/white" />
+
+
+                <com.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/pager"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="bottom"
+                    android:padding="10dip"
+                    app:centered="true"
+                    app:fillColor="#ff0099"
+                    app:pageColor="#FF0000"
+                    app:snap="false" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/indicator"
+                    android:background="#ececec" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="60dp"
+                    android:src="@drawable/share" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/follow" />
+
+                <TextView
+                    android:id="@+id/rupee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/indicator"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="₹"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/prd_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/indicator"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/rupee"
+                    android:text="300.00"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/indicator"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="In Stock"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/prd_descr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/prd_amount"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Product Description"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/prd_descr1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/prd_descr"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Cider is an alcoholic beverage made from the fermented juice of apples. Cider is popular in the United Kingdom and the Republic of Ireland and widely available. The UK has the world's highest per capita consumption, as well as its largest cider-producing companies" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/prd_amount"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:text="Vendor Details"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:id="@+id/prd_lytquantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/prd_descr1"
+                    android:layout_marginTop="10dp"
+                    android:background="#ececec"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/prd_quantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Quantity"
+                        android:textAllCaps="true" />
+
+                    <TextView
+                        android:id="@+id/prd_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:text="total price"
+                        android:layout_marginTop="5dp"
+                        android:textAllCaps="true" />
+
+                    <TextView
+                    android:id="@+id/prd_removecnt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/prd_quantity"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/sky_blue"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="-"
+                    android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/prd_cnt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/prd_quantity"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/prd_removecnt"
+                        android:background="@android:color/darker_gray"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="10dp"
+                        android:text="0"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/prd_add_cnt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/prd_quantity"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/prd_cnt"
+                        android:background="@color/sky_blue"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="10dp"
+                        android:text="+"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/prd_price"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="10dp"
+                        android:text="₹ 300.00"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/prd_related_prdcts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/prd_lytquantity"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Related Products"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/prd_details_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/prd_related_prdcts"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal" />
+
+                <Button
+                    android:id="@+id/btn_addtocart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/prd_details_recycler"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/sky_blue"
+                    android:text="ADD TO CART"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/btn_addtopoolcart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_addtocart"
+                    android:layout_marginBottom="10dp"
+                    android:background="#36c866"
+                    android:text="ADD TO POOL CART"
+                    android:textColor="@android:color/white" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

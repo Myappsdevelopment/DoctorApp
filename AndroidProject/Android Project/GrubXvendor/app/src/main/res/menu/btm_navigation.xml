@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/catalogue"
+        android:icon="@drawable/catalogue"
+        android:title="" />
+
+    <item
+        android:id="@+id/pending_received"
+        android:icon="@drawable/pending"
+        android:title="" />
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/homes"
+        android:title="" />
+
+    <item
+        android:id="@+id/buyers"
+        android:icon="@drawable/buyers"
+        android:title="" />
+
+
+    <item
+        android:id="@+id/product_sales_chart"
+        android:icon="@drawable/sales"
+        android:title="" />
+</menu>

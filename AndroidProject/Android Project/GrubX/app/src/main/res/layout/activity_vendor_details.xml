@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VendorDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/pager"
+                        android:layout_width="fill_parent"
+                        android:layout_height="400dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@android:color/holo_red_dark"
+                        android:paddingLeft="30dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="30dp"
+                        android:paddingBottom="5dp"
+                        android:text="22 New Poducts"
+                        android:textColor="@android:color/white" />
+
+
+                    <com.viewpagerindicator.CirclePageIndicator
+                        android:id="@+id/indicator"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/pager"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="bottom"
+                        android:padding="10dip"
+                        app:centered="true"
+                        app:fillColor="#ff0099"
+                        app:pageColor="#FF0000"
+                        app:snap="false" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/indicator"
+                        android:background="#ececec" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="60dp"
+                        android:src="@drawable/share" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/follow" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/vendor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Vendor Name"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/vendor_namedot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/vendor"
+                        android:text=":"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/vendor_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/vendor_namedot"
+                        android:text="Alex Lean" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="30dp"
+                        android:text="Send Request"
+                        android:textAllCaps="true"
+                        android:textColor="@color/red"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/vendor_mail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Vendor Email"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/vendor_emaildot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/vendor_mail"
+                        android:text=":"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/vendor_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/vendor_emaildot"
+                        android:text="lean895@gmail.com" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/vendor_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Vendor Mobile"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/vendor_nodot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/vendor_no"
+                        android:text=":"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/vendor_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/vendor_nodot"
+                        android:text="lean895@gmail.com" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/vendor_lo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Vendor Location"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/vendor_lodot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/vendor_lo"
+                        android:text=":"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/vendor_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/vendor_lodot"
+                        android:text="LB Block CVC Line" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/vendor_term"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Vendor Terms"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/vendor_termdot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/vendor_term"
+                        android:text=":"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/vendor_terms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/vendor_termdot"
+                        android:text="Minimum purchase" />
+
+                    <TextView
+                        android:id="@+id/vendor_terms_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/vendor_terms"
+                        android:text="₹"
+                        android:textColor="@color/red" />
+
+                    <TextView
+                        android:id="@+id/vendor_terms_amount1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_toRightOf="@+id/vendor_terms_amount"
+                        android:text="1000"
+                        android:textColor="@color/red" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/sky_blue"
+                    android:text="CHAT WITH VENDOR"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:text="Related Products of Vendor" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/recycler_vendor_details"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sky_blue"
+    android:orientation="vertical"
+    tools:context=".Registration">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/person_icon"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:backgroundTint="@android:color/white"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="40dp"
+        android:hint="Full Name" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:backgroundTint="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:hint="User Name" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:backgroundTint="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:hint="Mobile Number" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:backgroundTint="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:hint="Location" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:backgroundTint="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:hint="Email" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:backgroundTint="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:hint="Password" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textColorHint="@android:color/white"
+        android:backgroundTint="@android:color/white"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="Register"
+        android:textAllCaps="false" />
+
+</LinearLayout>

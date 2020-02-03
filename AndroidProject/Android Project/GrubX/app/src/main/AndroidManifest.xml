@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mad.grubx">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Shipping_Locations" />
+        <activity android:name=".Change_Password" />
+        <activity android:name=".Notification" />
+        <activity android:name=".My_Account" />
+        <activity android:name=".Profile" />
+        <activity android:name=".VendorDetails" />
+        <activity android:name=".Suppliers_TopProducts" />
+        <activity android:name=".Invoice" />
+        <activity android:name=".Bevarages" />
+        <activity android:name=".Product_categories" />
+        <activity android:name=".Product_Details" />
+        <activity android:name=".Registration" />
+        <activity android:name=".OTP" />
+        <activity android:name=".Order_Confirmed" />
+        <activity android:name=".Payment" />
+        <activity android:name=".Pool_Shopper" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".MyCart" />
+        <activity android:name=".Rewards" />
+        <activity android:name=".Switch_Business" />
+        <activity android:name=".Add_Business" />
+        <activity android:name=".My_Wish_List" />
+        <activity android:name=".MyOrders" />
+    </application>
+
+</manifest>
